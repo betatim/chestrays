@@ -4,9 +4,12 @@ Chestrays, like xrays but for chests
 
 ## Software setup
 
-We use conda to setup dependencies:
+We use conda to setup dependencies and then install this package:
 
-`conda env create -f environment.yml`
+```
+conda env create -f environment.yml
+pip install -e.
+```
 
 To use the shared kaggle account run the following command in the directory
 of this README:
@@ -16,7 +19,7 @@ export KAGGLE_CONFIG_DIR=`pwd`/secrets
 ```
 
 To check if worked run `kaggle kernels list -m`. It should list some kernels
-and not print any warnings or errors.
+owned by XXX and not print any warnings or errors.
 
 
 ## Tools
